@@ -5,17 +5,14 @@
     <title>HTML Academy: Седона</title>
   </head>
 
-< <body>
+  <body>
     <header class="page-header">
       <nav class="navigation">
-        <ul class="navigation-list">
-          <div class="logo">
-            <a class="logo-button" href="#" title="City of Sedona">
-              <img src="#" alt="логотип">
-              <span class="visually-hidden">City of Sedona.</span>
-          </div>
+        <a class="navigation-logo" href="index.html"></a>
+          <img class="page-header-logo" alt="логотип Седоны" src="#">
+        <ul>
           <li class="navigation-icon">
-            <a class="navigation-link" href="Main-page.html">Главная</a>
+            <a class="navigation-link navigation-link-current">Главная</a>
           </li>
           <li class="navigation-icon">
             <a class="navigation-link" href="about.html">О Седоне</a>
@@ -36,19 +33,19 @@
             </a>
           </li>
           <li class="navigation-icon">
-            <button class="navigation-link" type="button" href="#">
-              <span class="button-header">Хочу сюда!</span>
-            </button>
+            <a class="navigation-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="main-index">
-      <h1 class="visually-hidden">welcome to the gorgeous sedona.</h1>
+      <h1 class="visually-hidden">Welcome to the gorgeous sedona.
+        Because the Grand Canyon sucks!</h1>
       <img class="welcome" src="#" alt="WELCOME"> <br>
       <img class="to-the-gorgeous" src="#" alt="to the gorgeous"> <br>
-      <img class="sedona" src="#" alt="SEDONA">
+      <img class="sedona" src="#" alt="SEDONA"> <br>
+      <img class="because-the-grand-canyon-sucks!" src="#" alt="because the Grand Canyon sucks!">
 
       <section class="advantages">
         <h2 class="advantages-header">Седона — небольшой городок в Аризоне,<br>
@@ -61,10 +58,11 @@
             <p class="advantages-discription">Седона — не аттракцион для туристов,
               там течёт своя жизнь</p>
           </li>
-          <img class="photo-1"
-            src="photo-1.jpg"
-            alt="изображение городка"
-          >
+          <li>
+            <img class="photo-1"
+              src="photo-1.jpg"
+              alt="изображение городка">
+          </li>
           <li class="advantages-item-2">
             <h3 class="advantages-title">Небольшая площадь</h3>
             <p class="advantages-discription">Все достопримечательности находятся
@@ -79,10 +77,12 @@
             <h3 class="advantages-title">Мало туристов</h3>
             <p class="advantages-discription">Большинство едет в Гранд Каньон и
               толпится там</p>
-          <img class="photo-2"
-          src="photo-2.jpg"
-          alt="изображение каньона"
-          >
+          </li>
+          <li>
+            <img class="photo-2"
+            src="photo-2.jpg"
+            alt="изображение каньона">
+          </li>
           <li class="advantages-item-1">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-discription">Да, по нему можно пройти! Если вы
@@ -112,25 +112,27 @@
             <p class="service-discription">Не только китайского,
               но и настоящего местного производства!</p>
           </li>
+        </ul>
       </section>
 
       <section class="search-hotel">
         <h2 class="search-hotel-header">Заинтересовались?</h2>
         <p class="search-hotel-discription">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="search-hotel-link" href="search-1">поиск гостинцы в седоне</a>
-    <!--всплывающее окно в текущем задании не делается-->
-    <!--<div class="search-hotel-window" id="search-1">
-          <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="search-hotel-form-date-entrance">
-              <label for="date-entrance">Дата заезда</label>
-              <input type="text" name="date-entrance" id="date-entrance" placeholder="01.06.2023">
-            </p>
-            ...
-            <button class="button" type="submit">поиск</button>
-          </form>
-          <a href="#" class="close"></a>
-        </div> -->
+        <a class="search-hotel-link" href="catalog.html">поиск гостинцы в седоне</a>
+
+          <!--всплывающее окно в текущем задании не делается-->
+          <!--<div class="search-hotel-window" id="search-1">
+                <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <p class="search-hotel-form-date-entrance">
+                    <label for="date-entrance">Дата заезда</label>
+                    <input type="text" name="date-entrance" id="date-entrance" placeholder="01.06.2023">
+                  </p>
+                  ...
+                  <button class="button" type="submit">поиск</button>
+                </form>
+                <a href="#" class="close"></a>
+              </div> -->
       </section>
 
       <section class="subscription">
