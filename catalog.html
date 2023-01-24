@@ -114,24 +114,27 @@
               </li>
             </ul>
           </fieldset>
-          <div>
-            <fieldset>
-              <legend>Стоимость, ₽:</legend>
-              <label>
-                <input type="text" value="0"> от
+
+          <div class="catalog-filter-price">
+            <fieldset class="catalog-filter-price-range">
+              <legend class="catalog-filter-price-title">Стоимость, ₽:</legend>
+              <label class="control-price">
+                <input class="control-price-input" type="text" value="0"> от
               </label>
               <label>
-                <input type="text" value="9000"> до
+                <input class="control-price-input" type="text" value="9000"> до
               </label>
               <!--ползунок реализуется в другом ДЗ-->
             </fieldset>
           </div>
+
           <button class="button" type="submit" value="кнопка отправки">Применить</button>
           <button class="button" type="reset" value="кнопка сброса">Сбросить</button>
         </form>
 
         <div class="catalog-hotel">
           <h2 class="search-hotel-all">Найдено гостиниц: 38</h2>
+            <!--вероятно это не заголовок-->
           <select class="select-control" aria-label="Сортировка">
             <option class="cheap">Сначала дешевые</option>
             <option class="expensive">Сначала дорогие</option>
@@ -157,7 +160,7 @@
               <span class="product-class-price">Гостиница от 4000 руб</span>
               <a class="product-card-detail" href="#">Подробнее</a>
               <button class="product-card-favorite" type="button">
-                в избранное</button> <!--требует пояснения-->
+                в избранное</button>
               <div class="product-card-rating">
                 <span class="product-card-rating-active"></span>
                 <span class="product-card-rating-active"></span>
@@ -176,7 +179,8 @@
               <span class="product-class-price">Гостиница от 5000 руб</span>
               <a class="product-card-detail" href="#">Подробнее</a>
               <button class="product-card-favorite" type="button">
-                в избранное</button> <!--требует пояснения-->
+                в избранное</button> <!--требует пояснения, изменение кнопки
+                происходит в css правилах ?-->
               <div class="product-card-rating">
                 <span class="product-card-rating-active"></span>
                 <span class="product-card-rating-active"></span>
@@ -195,7 +199,7 @@
               <span class="product-class-price">Гостиница от 2500 руб</span>
               <a class="product-card-detail" href="#">Подробнее</a>
               <button class="product-card-favorite" type="button">
-                в избранное</button> <!--требует пояснения-->
+                в избранное</button>
               <div class="product-card-rating">
                 <span class="product-card-rating-active"></span>
                 <span class="product-card-rating-active"></span>
@@ -214,7 +218,7 @@
               <span class="product-class-price">Гостиница от 1500 руб</span>
               <a class="product-card-detail" href="#">Подробнее</a>
               <button class="product-card-favorite" type="button">
-                в избранное</button> <!--требует пояснения-->
+                в избранное</button>
               <div class="product-card-rating">
                 <span class="product-card-rating-active"></span>
                 <span class="product-card-rating-active"></span>
