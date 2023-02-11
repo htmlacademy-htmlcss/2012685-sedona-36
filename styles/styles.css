@@ -15,12 +15,14 @@
 
 /* Global-selectors */
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color:#333333;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
 }
 .visually-hidden {
   position: absolute;
@@ -33,8 +35,13 @@ body {
   overflow: hidden;
 }
 .background-shadow {
-  background-color: #F2F2F2 80%;
+  background-color: #FFFFFF;
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
+/* Header */
 .page-header {
   color:#000000;
   background-color: #FFFFFF;
@@ -50,7 +57,6 @@ body {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
-  text-transform: capitalize;
 }
 .navigation-favorite-counter {
   font-weight: 400;
@@ -78,8 +84,7 @@ body {
 
 /* Hero-index */
 .hero-index {
-  color: #000000;
-  background-color: #FFFFFF;
+  background-color: #909db1;
   background-image: url("../images/welcome-hero-index-bottom.svg"), url("../images/index-background-hero.jpg");
   background-size: 1200px 57px, cover;
   background-repeat: no-repeat, no-repeat;
@@ -133,10 +138,10 @@ body {
   color: #000000;
 }
 .background-second-one {
-  background-color: #83B3D3 12%;
+  background-color: rgba(131, 179, 211, 0.12)
 }
 .background-second-two {
-  background-color: #83B3D3 20%;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 .background-basic-third {
   background-color: #82B3D3;
@@ -176,22 +181,20 @@ body {
 }
 
 /* Search */
+.search-hotel {
+  text-align: center;
+}
 .search-hotel-header {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
-}
-.search-hotel-discription {
-  text-align: center;
 }
 .search-hotel-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756157;
@@ -200,32 +203,27 @@ body {
 
 /* Subscription */
 .subscription {
-  color: #000000;
-  background-color: #FFFFFF;
+  background-color: #616e67;
   background-image: url("../images/index-subscription-background.jpg");
   background-size: 1200px 415px;
   background-repeat: no-repeat;
+  text-align: center;
 }
 .subscription-header {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
   color: #FFFFFF;
-}
-.subscription-form {
-  text-align: center;
 }
 .subscription-discription {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #FFFFFF;
-  text-align: center;
 }
 .subscription-field {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -233,13 +231,15 @@ body {
   color: #000000;
 }
 .subscription-button {
-  font-family: inherit;
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
   background-color: #82B3D3;
   text-transform: uppercase;
+  border: none;
 }
 
 /* Footer */
@@ -263,8 +263,7 @@ body {
 
 /* Hero-catalog */
 .background-hero-catalog {
-  color: #000000;
-  background-color: #FFFFFF;
+  background-color: #4f635d;
   background-image: url("../images/catalog-filter-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -298,7 +297,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-transform: capitalize;
   color: #FFFFFF;
 }
 .control {
@@ -320,6 +318,8 @@ body {
   line-height: 24px;
 }
 .button-catalog-filter {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -327,15 +327,19 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #82B3D3;
+  border: none;
 }
 .button-catalog-reset {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  /* background-color: ? ; */
+  background-color: transparent;
+  border: none;
 }
 .search-hotel-all {
   font-weight: 700;
@@ -345,6 +349,8 @@ body {
   color: #000000;
 }
 .select-control {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -387,12 +393,15 @@ body {
 
 /* Button-favorite */
 .product-card-favorite {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color:#FFFFFF;
   background-color: #82B3D3;
+  border: none;
 }
 .product-card-rating-result {
   font-weight: 400;
@@ -419,25 +428,14 @@ body {
   background-color: #F2F2F2;
 }
 
-/* Subscription */
-.subscription-catalog {
-  color: #000000;
+/* Subscription-catalog */
+.background-subscription-catalog {
   background-color: #FFFFFF;
-  background: #FFFFFF;
-  background-size: cover;
+  background-image: none;
 }
-.subscription-header-catalog {
+.color-title {
   color: #000000;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
 }
-.subscription-discription-catalog {
+.color-discription {
   color: #333333;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
 }
