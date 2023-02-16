@@ -21,9 +21,7 @@ html {
 
 body {
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -51,6 +49,9 @@ img {
 }
 
 .background-shadow {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   background-color: #FFFFFF;
   width: 1200px;
   margin: 0 auto;
@@ -134,7 +135,7 @@ img {
 /* Main */
 .main-container {
   width: 1200px;
-  flex-grow: 1;    /* - - - - - - Зачем ? */
+  flex-grow: 1;
   margin-top: -6px;
 }
 
@@ -381,8 +382,8 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  padding: 14px 345px 14px 20px; /* - - -  - - !требует исправления !*/
-  width: 81px;   /* - - - - - - - -  - - !требует исправления !*/
+  padding: 14px 345px 14px 20px;
+  width: 81px;
   margin: 0;
   border: none;
 }
