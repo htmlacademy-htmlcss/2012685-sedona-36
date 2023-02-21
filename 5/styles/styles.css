@@ -118,7 +118,6 @@ img {
 
 .navigation-link-user {
   padding: 22px 12px;
-  display: block;
 }
 
 .navigation-favorite-counter {
@@ -146,7 +145,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   display: block;
-  padding: 8px 0;
+  padding: 8px 34px;
 }
 
 /* Main */
@@ -163,7 +162,7 @@ img {
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
   text-align: center;
-  padding: 51px 371px 82px;
+  padding: 48px 371px 79px;
 }
 
 /* Advantages */
@@ -202,7 +201,7 @@ img {
 .advantages-item-image-container {
   box-sizing: border-box;
   width: 400px;
-  padding: 102px 85px;
+  padding: 101px 85px;
 }
 
 .advantages-item-image-container .advantages-title {
@@ -510,13 +509,14 @@ img {
 /* Filter */
 .catalog-filter {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-group {
   border: none;
   margin: 0 70px 0 0;
   padding: 0;
-  min-width: 150px;
+  width: 150px;
 }
 
 .catalog-filter-list {
@@ -532,8 +532,9 @@ img {
 
 .catalog-filter-price-range {
   border: none;
-  margin: 0;
+  margin: 0 62px 0 0;
   padding: 0;
+  width: 365px;
 }
 
 .catalog-filter-title {
@@ -552,7 +553,7 @@ img {
 }
 
 .control-price {
-  font-family: 'PT Sans' sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -619,6 +620,7 @@ img {
 
 .catalog-hotel-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 1060px;
   margin-bottom: 40px;
@@ -631,7 +633,7 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
+  margin: 0 200px 0 0;
   width: 360px;
 }
 
@@ -641,17 +643,21 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin: auto;
+  margin: 0;
   width: 292px;
   min-height: 49px;
 }
 
 /* Selection-card */
 .selection-card-list {
+  display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0 0 0 70px;
+  margin: 0;
+  margin-left: auto;
   padding: 0;
+  width: 160px;
+  min-height: 48px;
 }
 
 /* Product-card */
