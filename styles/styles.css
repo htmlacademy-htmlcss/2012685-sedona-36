@@ -66,7 +66,7 @@ img {
 
 /* Navigation */
 .page-header {
-  width: 1200px;
+  padding: 0 70px;
 }
 
 .navigation {
@@ -83,18 +83,18 @@ img {
   padding: 0;
   list-style: none;
   flex-wrap: wrap;
+  margin-left: 30px;
 }
 
 .navigation-logo {
-  margin-right: 30px;
-  margin-left: 70px;
-  margin-bottom: -12px;
+  margin-bottom: -6px;
   position: relative;
   display: block;
 }
 
-.navigation-item {
-  padding: 0 16px;
+.page-header-logo {
+  display: block;
+
 }
 
 .navigation-link {
@@ -103,6 +103,8 @@ img {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+  padding: 20px 16px;
+  display: block;
 }
 
 .navigation-user {
@@ -112,6 +114,11 @@ img {
 
 .navigation-item-user {
   width: 44px;
+}
+
+.navigation-link-user {
+  padding: 22px 12px;
+  display: block;
 }
 
 .navigation-favorite-counter {
@@ -127,8 +134,6 @@ img {
   width: 160px;
   background: #756157;
   border-radius: 4px;
-  margin-right: 70px;
-  margin-left: 20px;
   align-items: center;
 }
 
@@ -220,6 +225,7 @@ img {
   width: 230px;
   margin: 62px auto 0;
 }
+
 .advantages-item {
   padding: 112px 85px;
   box-sizing: border-box;
@@ -422,20 +428,23 @@ img {
 .footer {
   display: flex;
   padding: 40px 70px 30px;
+  align-items: center;
 }
 
 /* Social */
-.footer-social {
-  margin: 5px 41px 5px 0;
-}
-
 .footer-social-list {
   list-style: none;
   box-sizing: border-box;
   width: 142px;
   text-align: center;
   padding: 0;
+  margin: 0;
+  display: flex;
   flex-wrap: wrap;
+}
+
+.footer-social-link {
+  padding: 13px 11px;
 }
 
 /* Contacts */
@@ -443,7 +452,8 @@ img {
   box-sizing: border-box;
   width: 720px;
   text-align: center;
-  margin: 5px 41px 5px 0;
+  margin: 0;
+  padding: 5px 5px;
 }
 
 .contacts-phone {
@@ -452,12 +462,14 @@ img {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
+  display: block;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0;
 }
 
 .htmlacademy-logo-link {
-  margin: 5px 0;
+  margin-left: auto;
   width: 120px;
 }
 
