@@ -27,12 +27,12 @@
           </ul>
 
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
+            <li class="navigation-item-user">
               <a class="navigation-link-user" href="#">
                 <span class="visually-hidden">Поиск.</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item-user">
               <a class="navigation-link-user" href="#">
                 <span class="visually-hidden">Избранное.</span>
                 <span class="navigation-favorite-counter">12</span>
@@ -45,7 +45,7 @@
         </nav>
       </header>
 
-      <main class="main" data-test="main">
+      <main class="main-container" data-test="main">
         <h1 class="visually-hidden">Великолепная Седона. Туристический город с природными достопримечательностями. Большой выбор отелей.</h1>
         <div class="hero-index" data-test="hero">
           <img class="welcome" src="images/welcome-hero-index.svg" alt="Welcome to the gorgeous sedona.
@@ -60,13 +60,13 @@
           </div>
           <ul class="advantages-list">
             <li class="advantages-image background-basic-three">
-              <div class="advantages-item-container">
+              <div class="advantages-item-image-container">
                 <h3 class="advantages-title">Настоящий городок</h3>
                 <p class="advantages-discription">Седона — не аттракцион для туристов,
                   там течёт своя жизнь</p>
               </div>
               <img class="image" src="images\sedona-advantages.jpg" alt="Улица города седоны с домами и деревьями."
-              width="800" height="384">
+              width="800" height="385">
             </li>
             <li class="advantages-item background-second-one">
               <h3 class="advantages-title">Небольшая площадь</h3>
@@ -86,7 +86,7 @@
             <li class="advantages-image background-basic-three">
               <img class="image" src="images\canyon-advantages.jpg" alt="Вид на обрыв каньона с мостом дьявола."
                 width="800" height="385">
-              <div class="advantages-item-container">
+              <div class="advantages-item-image-container">
                 <h3 class="advantages-title">Там есть мост дьявола</h3>
                 <p class="advantages-discription">Да, по нему можно пройти! Если вы
                   осмелитесь, разумеется</p>
@@ -102,25 +102,23 @@
             <p class="service-header">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
             <p class="service-header-discription">Опытный персонал и качественное обслуживание!</p>
           </div>
-          <div class="service-list-container">
-            <ul class="service-list">
-              <li class="service-item background-second-one">
-                <h3 class="service-title">Жильё</h3>
-                <p class="service-discription">Рекомендуем пожить в настоящем мотеле,
-                  всё как в кино!</p>
-              </li>
-              <li class="service-item">
-                <h3 class="service-title">Еда</h3>
-                <p class="service-discription">Всегда заказывайте
-                  топовый фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-              <li class="service-item background-second-one">
-                <h3 class="service-title">Сувениры</h3>
-                <p class="service-discription">Не только китайского,
-                  но и настоящего местного производства!</p>
-              </li>
-            </ul>
-          </div>
+          <ul class="service-list">
+            <li class="service-item background-second-one">
+              <h3 class="service-title">Жильё</h3>
+              <p class="service-discription">Рекомендуем пожить <br> в настоящем мотеле,<br>
+                всё как в кино!</p>
+            </li>
+            <li class="service-item">
+              <h3 class="service-title">Еда</h3>
+              <p class="service-discription">Всегда заказывайте <br>
+                топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+            </li>
+            <li class="service-item background-second-one">
+              <h3 class="service-title">Сувениры</h3>
+              <p class="service-discription">Не только китайского,<br>
+                но и настоящего местного <br> производства!</p>
+            </li>
+          </ul>
         </section>
 
         <section class="search-hotel" data-test="search">
@@ -144,7 +142,7 @@
 
       </main>
 
-      <footer class="footer-index" data-test="footer">
+      <footer class="footer" data-test="footer">
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="footer-social-list">
@@ -169,6 +167,7 @@
         <address class="contacts">
           <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
         </address>
+
         <a class="htmlacademy-logo-link" href="https://htmlacademy.ru/">
           <span class="visually-hidden">Логотип академии.</span>
           <img class="htmlacademy-logo" alt="Стилизованный логотип htmlacademy."
