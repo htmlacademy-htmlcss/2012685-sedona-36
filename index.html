@@ -28,15 +28,14 @@
 
           <ul class="navigation-list navigation-user">
             <li class="navigation-item-user">
-              <a class="navigation-link-user" href="#">
+              <a class="navigation-link-user search-icon" href="#">
                 <span class="visually-hidden">Поиск.</span>
               </a>
             </li>
             <li class="navigation-item-user">
-              <a class="navigation-link-user" href="#">
-                <span class="visually-hidden">Избранное.</span>
-                <div class="navigation-heart"></div>
+              <a class="navigation-link-user favorite-icon" href="#">
                 <span class="navigation-favorite-counter">12</span>
+                <span class="visually-hidden">Избранное.</span>
               </a>
             </li>
             <li class="navigation-item-button">
@@ -105,7 +104,7 @@
           </div>
           <ul class="service-list">
             <li class="service-item background-second-one">
-              <h3 class="service-title icon-house">Жильё</h3>
+              <h3 class="service-title">Жильё</h3>
               <p class="service-discription">Рекомендуем пожить <br> в настоящем мотеле,<br>
                 всё как в кино!</p>
             </li>
@@ -191,18 +190,51 @@
       </footer>
     </div>
 
-     <!--всплывающее окно в текущем задании не делается-->
-      <!--<div class="search-hotel-window" id="search-1">
-            <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="search-hotel-form-date-entrance">
-                <label for="date-entrance">Дата заезда</label>
-                <input type="text" name="date-entrance" id="date-entrance" placeholder="01.06.2023">
-              </p>
-              ...
-              <button class="button" type="submit">поиск</button>
-            </form>
-            <a href="#" class="close"></a>
-          </div> -->
+    <div class="modal-container">
+      <div class="modal">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <section class="modal-form">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="modal-form">
+              <label class="modal-date">
+                Дата Заезда:
+                <input class="modal-input-date" type="text" name="date-entrance" placeholder="27 апреля 2020">
+                <span class="modal-text">Мы не можем отправить вас в прошлое.</span>
+              </label>
+            </p>
+            <p class="modal-form">
+              <label class="modal-date">
+                Дата Выезда:
+                <input class="modal-input-date" type="text" name="date-departure" placeholder="1 сентября 2023">
+                <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
+              </label>
+            </p>
+            <p class="modal-form">
+              <label class="modal-number">
+                Взрослые:
+                <button class="modal-input-minus-button" type="button"></button>
+                <input class="modal-input-number" type="number" name="number-adults" placeholder="2">
+                <button class="modal-input-plus-button" type="button"></button>
+              </label>
+            </p>
+            <p class="modal-form">
+              <label class="modal-number">
+                Дети:
+                <button class="modal-input-minus-button" type="button"></button>
+                <input class="modal-input-number" type="number" name="number-children" placeholder="2">
+                <button class="modal-input-plus-button" type="button"></button>
+              </label>
+            </p>
+
+            <button class="modal-button-submit" type="submit">Начать</button>
+          </form>
+          <a href="#" class="close"></a>
+        </section>
+      </div>
+    </div>
 </body>
 
 </html>
