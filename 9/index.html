@@ -191,46 +191,89 @@
       </footer>
     </div>
 
-    <div class="modal-container">
+    <div class="modal-container modal-close">
       <div class="modal">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть.</span>
+          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"/>
+          </svg>
         </button>
         <section class="modal-form">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="modal-form">
-              <label class="modal-date">
-                Дата Заезда:
-                <input class="modal-input-date" type="text" name="date-entrance" placeholder="27 апреля 2020">
-                <span class="modal-text">Мы не можем отправить вас в прошлое.</span>
-              </label>
-            </p>
-            <p class="modal-form">
-              <label class="modal-date">
-                Дата Выезда:
-                <input class="modal-input-date" type="text" name="date-departure" placeholder="1 сентября 2023">
-                <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
-              </label>
-            </p>
-            <p class="modal-form">
-              <label class="modal-number">
-                Взрослые:
-                <button class="modal-input-minus-button" type="button"></button>
-                <input class="modal-input-number" type="number" name="number-adults" placeholder="2">
-                <button class="modal-input-plus-button" type="button"></button>
-              </label>
-            </p>
-            <p class="modal-form">
-              <label class="modal-number">
-                Дети:
-                <button class="modal-input-minus-button" type="button"></button>
-                <input class="modal-input-number" type="number" name="number-children" placeholder="2">
-                <button class="modal-input-plus-button" type="button"></button>
-              </label>
-            </p>
 
-            <button class="modal-button-submit" type="submit">Начать</button>
+            <div class="modal-form-date-container">
+              <label class="modal-date-label" for="input-date-entrance">
+                <span class="modal-label-text">Дата Заезда:</span>
+              </label>
+              <p class="modal-date-container">
+                <input class="modal-input-date" id="input-date-entrance" type="value" name="date-entrance" placeholder="27 апреля 2020">
+                <span class="modal-text modal-text-error">Мы не можем отправить вас в прошлое.</span>
+              </p>
+            </div>
+
+            <div class="modal-form-date-container">
+              <label class="modal-date-label" for="input-date-departure">
+                <span class="modal-label-text">Дата Выезда:</span>
+              </label>
+              <p class="modal-date-container">
+                <input class="modal-input-date" id="input-date-departure" type="value" name="date-departure" placeholder="1 сентября 2023">
+                <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
+              </p>
+            </div>
+
+            <div class="modal-form-number-container">
+              <label class="modal-number-label" for="modal-input-number-adult">
+                <span class="modal-label-text">Взрослые:</span>
+              </label>
+              <p class="modal-number-container">
+                <button class="modal-input-minus-button" type="button">
+                  <svg width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                  </svg>
+                </button>
+                <input class="modal-input-number" id="modal-input-number-adult" type="number" name="number-adults" placeholder="2">
+                <button class="modal-input-plus-button" type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                  </svg>
+                </button>
+              </p>
+            </div>
+
+            <div class="modal-form-number-container">
+              <label class="modal-number-label-children" for="modal-input-number-children">
+                <span class="modal-label-text-children">Дети:</span>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" viewBox="0 0 2 12">
+                      <path fill="currentColor" fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                    Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </span>
+              </label>
+
+              <p class="modal-number-container">
+                <button class="modal-input-minus-button" type="button">
+                  <svg width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                  </svg>
+                </button>
+                <input class="modal-input-number" id="modal-input-number-children" type="number" name="number-children" placeholder="2">
+                <button class="modal-input-plus-button" type="button">
+                  <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                  </svg>
+                </button>
+              </p>
+            </div>
+
+            <button class="modal-button-submit button-condition" type="submit">Начать</button>
           </form>
           <a href="#" class="close"></a>
         </section>
