@@ -518,7 +518,6 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  letter-spacing:;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756157;
@@ -1574,6 +1573,7 @@ img {
 .modal-input-date {
   background-color: #F2F2F2;
   padding: 12px 50px 12px 20px;
+  font-family: PT Sans, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1641,6 +1641,7 @@ img {
   box-sizing: border-box;
   border: none;
   padding: 14px 5px;
+  font-family: PT Sans, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
