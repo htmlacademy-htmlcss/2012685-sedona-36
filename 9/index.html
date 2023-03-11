@@ -205,27 +205,29 @@
 
             <div class="modal-form-date-container">
               <label class="modal-date-label" for="input-date-entrance">
-                <span class="modal-label-text">Дата Заезда:</span>
+                Дата Заезда:
               </label>
               <p class="modal-date-container">
-                <input class="modal-input-date" id="input-date-entrance" type="value" name="date-entrance" placeholder="27 апреля 2020">
+                <input class="modal-input-date" id="input-date-entrance" type="text" value="27 апреля 2020"
+                   name="date-entrance" placeholder="Укажите дату" required>
                 <span class="modal-text modal-text-error">Мы не можем отправить вас в прошлое.</span>
               </p>
             </div>
 
             <div class="modal-form-date-container">
               <label class="modal-date-label" for="input-date-departure">
-                <span class="modal-label-text">Дата Выезда:</span>
+                Дата Выезда:
               </label>
               <p class="modal-date-container">
-                <input class="modal-input-date" id="input-date-departure" type="value" name="date-departure" placeholder="1 сентября 2023">
+                <input class="modal-input-date" id="input-date-departure" type="text" value="1 сентября 2021"
+                  name="date-departure" placeholder="Укажите дату" required>
                 <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
               </p>
             </div>
 
             <div class="modal-form-number-container">
               <label class="modal-number-label" for="modal-input-number-adult">
-                <span class="modal-label-text">Взрослые:</span>
+                Взрослые:
               </label>
               <p class="modal-number-container">
                 <button class="modal-input-minus-button" type="button">
@@ -233,7 +235,8 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z"/>
                   </svg>
                 </button>
-                <input class="modal-input-number" id="modal-input-number-adult" type="number" name="number-adults" placeholder="2">
+                <input class="modal-input-number" id="modal-input-number-adult" type="number" value="2"
+                  name="number-adults" required>
                 <button class="modal-input-plus-button" type="button">
                   <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
@@ -244,7 +247,7 @@
 
             <div class="modal-form-number-container">
               <label class="modal-number-label-children" for="modal-input-number-children">
-                <span class="modal-label-text-children">Дети:</span>
+                Дети:
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                     <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" viewBox="0 0 2 12">
@@ -264,7 +267,8 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z"/>
                   </svg>
                 </button>
-                <input class="modal-input-number" id="modal-input-number-children" type="number" name="number-children" placeholder="2">
+                <input class="modal-input-number" id="modal-input-number-children" type="number" value="2"
+                  name="number-children" required>
                 <button class="modal-input-plus-button" type="button">
                   <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
