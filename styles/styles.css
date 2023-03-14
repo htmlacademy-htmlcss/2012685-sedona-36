@@ -896,6 +896,10 @@ img {
   opacity: 10%;
 }
 
+.control-input:disabled ~ .control-label-text {
+  opacity: 10%;
+}
+
 .control-input:disabled + .control-radio {
   opacity: 10%;
 }
